@@ -1,52 +1,211 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
+
+const mobileMenuOpen = ref(false)
+
+const toggleMobileMenu = () => {
+  mobileMenuOpen.value = !mobileMenuOpen.value
+}
+
+const closeMobileMenu = () => {
+  mobileMenuOpen.value = false
+}
 </script>
 
 <template>
-  <header class="bg-gray-900 text-white">
+  <header class="bg-gray-900 text-white sticky top-0 z-50 shadow-lg">
     <nav class="max-w-7xl mx-auto px-6 py-4">
       <div class="flex items-center justify-between">
         <!-- Lab Name -->
         <div class="text-lg font-light">McVicker Lab</div>
 
-        <!-- Navigation Links -->
-        <ul class="flex items-center gap-6 text-sm">
+        <!-- Desktop Navigation Links -->
+        <ul class="hidden md:flex items-center gap-1 text-sm">
           <li>
-            <RouterLink to="/" class="hover:text-gray-300 transition-colors">Home</RouterLink>
+            <RouterLink
+              to="/"
+              class="px-4 py-2 hover:text-white transition-all duration-200 active:bg-gray-950"
+              active-class="bg-gray-800 text-white border-b-2 border-white"
+              >Home</RouterLink
+            >
           </li>
           <li>
-            <RouterLink to="/news" class="hover:text-gray-300 transition-colors">News</RouterLink>
+            <RouterLink
+              to="/news"
+              class="px-4 py-2 hover:text-white transition-all duration-200 active:bg-gray-950"
+              active-class="bg-gray-800 text-white border-b-2 border-white"
+              >News</RouterLink
+            >
           </li>
           <li>
-            <RouterLink to="/people" class="hover:text-gray-300 transition-colors"
+            <RouterLink
+              to="/people"
+              class="px-4 py-2 hover:text-white transition-all duration-200 active:bg-gray-950"
+              active-class="bg-gray-800 text-white border-b-2 border-white"
               >People</RouterLink
             >
           </li>
           <li>
-            <RouterLink to="/photos" class="hover:text-gray-300 transition-colors"
+            <RouterLink
+              to="/photos"
+              class="px-4 py-2 hover:text-white transition-all duration-200 active:bg-gray-950"
+              active-class="bg-gray-800 text-white border-b-2 border-white"
               >Photos</RouterLink
             >
           </li>
           <li>
-            <RouterLink to="/publications" class="hover:text-gray-300 transition-colors"
+            <RouterLink
+              to="/publications"
+              class="px-4 py-2 hover:text-white transition-all duration-200 active:bg-gray-950"
+              active-class="bg-gray-800 text-white border-b-2 border-white"
               >Publications</RouterLink
             >
           </li>
           <li>
-            <RouterLink to="/software" class="hover:text-gray-300 transition-colors"
+            <RouterLink
+              to="/software"
+              class="px-4 py-2 hover:text-white transition-all duration-200 active:bg-gray-950"
+              active-class="bg-gray-800 text-white border-b-2 border-white"
               >Software</RouterLink
             >
           </li>
           <li>
-            <RouterLink to="/join" class="hover:text-gray-300 transition-colors">Join</RouterLink>
+            <RouterLink
+              to="/join"
+              class="px-4 py-2 hover:text-white transition-all duration-200 active:bg-gray-950"
+              active-class="bg-gray-800 text-white border-b-2 border-white"
+              >Join</RouterLink
+            >
           </li>
           <li>
-            <RouterLink to="/contact" class="hover:text-gray-300 transition-colors"
+            <RouterLink
+              to="/contact"
+              class="px-4 py-2 hover:text-white transition-all duration-200 active:bg-gray-950"
+              active-class="bg-gray-800 text-white border-b-2 border-white"
               >Contact</RouterLink
             >
           </li>
         </ul>
+
+        <!-- Mobile Menu Button -->
+        <button
+          @click="toggleMobileMenu"
+          class="md:hidden p-2 rounded-lg hover:bg-gray-800 transition-colors"
+          aria-label="Toggle menu"
+        >
+          <svg
+            v-if="!mobileMenuOpen"
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+          <svg v-else class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
       </div>
+
+      <!-- Mobile Navigation Menu -->
+      <Transition
+        enter-active-class="transition ease-out duration-200"
+        enter-from-class="opacity-0 -translate-y-2"
+        enter-to-class="opacity-100 translate-y-0"
+        leave-active-class="transition ease-in duration-150"
+        leave-from-class="opacity-100 translate-y-0"
+        leave-to-class="opacity-0 -translate-y-2"
+      >
+        <ul
+          v-if="mobileMenuOpen"
+          class="md:hidden mt-4 space-y-1 pb-4 border-t border-gray-800 pt-4"
+        >
+          <li>
+            <RouterLink
+              to="/"
+              @click="closeMobileMenu"
+              class="block px-4 py-3 hover:text-white transition-all duration-200 active:bg-gray-950"
+              active-class="bg-gray-800 text-white border-l-4 border-white"
+              >Home</RouterLink
+            >
+          </li>
+          <li>
+            <RouterLink
+              to="/news"
+              @click="closeMobileMenu"
+              class="block px-4 py-3 hover:text-white transition-all duration-200 active:bg-gray-950"
+              active-class="bg-gray-800 text-white border-l-4 border-white"
+              >News</RouterLink
+            >
+          </li>
+          <li>
+            <RouterLink
+              to="/people"
+              @click="closeMobileMenu"
+              class="block px-4 py-3 hover:text-white transition-all duration-200 active:bg-gray-950"
+              active-class="bg-gray-800 text-white border-l-4 border-white"
+              >People</RouterLink
+            >
+          </li>
+          <li>
+            <RouterLink
+              to="/photos"
+              @click="closeMobileMenu"
+              class="block px-4 py-3 hover:text-white transition-all duration-200 active:bg-gray-950"
+              active-class="bg-gray-800 text-white border-l-4 border-white"
+              >Photos</RouterLink
+            >
+          </li>
+          <li>
+            <RouterLink
+              to="/publications"
+              @click="closeMobileMenu"
+              class="block px-4 py-3 hover:text-white transition-all duration-200 active:bg-gray-950"
+              active-class="bg-gray-800 text-white border-l-4 border-white"
+              >Publications</RouterLink
+            >
+          </li>
+          <li>
+            <RouterLink
+              to="/software"
+              @click="closeMobileMenu"
+              class="block px-4 py-3 hover:text-white transition-all duration-200 active:bg-gray-950"
+              active-class="bg-gray-800 text-white border-l-4 border-white"
+              >Software</RouterLink
+            >
+          </li>
+          <li>
+            <RouterLink
+              to="/join"
+              @click="closeMobileMenu"
+              class="block px-4 py-3 hover:text-white transition-all duration-200 active:bg-gray-950"
+              active-class="bg-gray-800 text-white border-l-4 border-white"
+              >Join</RouterLink
+            >
+          </li>
+          <li>
+            <RouterLink
+              to="/contact"
+              @click="closeMobileMenu"
+              class="block px-4 py-3 hover:text-white transition-all duration-200 active:bg-gray-950"
+              active-class="bg-gray-800 text-white border-l-4 border-white"
+              >Contact</RouterLink
+            >
+          </li>
+        </ul>
+      </Transition>
     </nav>
   </header>
 </template>
