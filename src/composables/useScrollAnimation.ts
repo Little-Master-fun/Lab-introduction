@@ -74,7 +74,7 @@ export function useScrollAnimation() {
           ease: 'power2.out',
           scrollTrigger: {
             trigger: element,
-            start: 'top 85%',
+            start: 'top 90%',
             end: 'bottom 20%',
             toggleActions: 'play none none reverse',
             ...options,
@@ -100,7 +100,7 @@ export function useScrollAnimation() {
           ease: 'power2.out',
           scrollTrigger: {
             trigger: element,
-            start: 'top 85%',
+            start: 'top 100%',
             end: 'bottom 20%',
             toggleActions: 'play none none reverse',
             ...options,
