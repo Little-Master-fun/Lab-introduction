@@ -20,7 +20,7 @@ defineProps<{
 
 <template>
   <div
-    class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden group"
+    class="bg-white shadow-md rounded-lg  hover:shadow-xl transition-shadow duration-300 overflow-hidden group"
   >
     <!-- Card Content -->
     <div class="p-6">

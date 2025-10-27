@@ -58,7 +58,7 @@ onUnmounted(() => {
     @mouseleave="startAutoplay"
   >
     <!-- Images -->
-    <div class="relative h-64 md:h-96">
+    <div class="relative h-64 md:h-96 xl:h-128">
       <transition-group name="fade" mode="out-in">
         <div
           v-for="(image, index) in images"

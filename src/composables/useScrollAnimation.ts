@@ -23,8 +23,9 @@ export function useScrollAnimation() {
           ease: 'power2.out',
           scrollTrigger: {
             trigger: element,
-            start: 'top 85%',
+            start: 'top 100%',
             end: 'bottom 20%',
+            // markers: true,
             toggleActions: 'play none none reverse',
             ...options,
           },
@@ -110,27 +111,31 @@ export function useScrollAnimation() {
   }
 
   const staggerFadeInUp = (selector: string, options = {}) => {
-    gsap.fromTo(
-      selector,
-      {
-        opacity: 0,
-        y: 50,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.6,
-        ease: 'power2.out',
-        stagger: 0.15,
-        scrollTrigger: {
-          trigger: selector,
-          start: 'top 85%',
-          end: 'bottom 20%',
-          toggleActions: 'play none none reverse',
-          ...options,
+    const elements = document.querySelectorAll(selector)
+    elements.forEach((element, index) => {
+      gsap.fromTo(
+        element,
+        {
+          opacity: 0,
+          y: 50,
         },
-      },
-    )
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.3,
+          delay: index <= 3 ? index * 0.1 : 0, // 只有前4个元素有交错延迟，后面的立即播放
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: element, // 每个元素独立的触发器
+            start: 'top 100%',
+            end: 'bottom 20%',
+            markers: true,
+            toggleActions: 'play none none reverse',
+            ...options,
+          },
+        },
+      )
+    })
   }
 
   const cleanup = () => {

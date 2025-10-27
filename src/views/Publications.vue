@@ -117,12 +117,12 @@ const sections: PublicationSection[] = [
   },
 ]
 
-const { fadeInUp, fadeIn } = useScrollAnimation()
+const { fadeInUp, fadeIn, staggerFadeInUp } = useScrollAnimation()
 
 onMounted(() => {
   fadeInUp('.animate-title')
   fadeInUp('.animate-section')
-  fadeIn('.animate-card')
+  staggerFadeInUp('.animate-card')
 })
 </script>
 
