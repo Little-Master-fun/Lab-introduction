@@ -15,7 +15,7 @@ const closeMobileMenu = () => {
 
 <template>
   <header class="bg-gray-900 text-white sticky top-0 z-50 shadow-lg">
-    <nav class="max-w-7xl mx-auto px-6 py-4">
+    <nav class="max-w-7xl mx-auto px-6 py-4 relative">
       <div class="flex items-center justify-between">
         <!-- Lab Name -->
         <RouterLink
@@ -135,7 +135,7 @@ const closeMobileMenu = () => {
       >
         <ul
           v-if="mobileMenuOpen"
-          class="md:hidden mt-4 space-y-1 pb-4 border-t border-gray-800 pt-4"
+          class="md:hidden absolute top-full left-0 right-0 bg-gray-900 shadow-lg space-y-1 py-4 border-t border-gray-800"
         >
           <li>
             <RouterLink
