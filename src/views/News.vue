@@ -9,6 +9,16 @@ interface TimelineEntry {
   items: NewsItem[]
 }
 
+// 时间线，一个date代表时间，items代表新闻，text代表新闻内容，link代表新闻链接
+// link为空代表不加链接，如：{ text: '新闻1' }
+// 可以添加多个时间线，如：
+// {
+//   date: '2025',
+//   items: [
+//     { text: '新闻1', link: '#' },
+//     { text: '新闻2' },
+//   ],
+// },
 const timeline: TimelineEntry[] = [
   {
     date: 'April 2025',
@@ -114,25 +124,22 @@ const timeline: TimelineEntry[] = [
   <main class="max-w-6xl mx-auto px-6 py-12">
     <h1 class="text-4xl font-light text-gray-800 mb-12">News</h1>
 
-    <!-- Timeline Container -->
+    <!-- 时间线 -->
     <div class="relative">
-      <!-- Vertical Line -->
       <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-300"></div>
 
-      <!-- Timeline Entries -->
+      <!-- 时间线条目 -->
       <div class="space-y-10">
         <div v-for="(entry, index) in timeline" :key="index" class="relative pl-10">
-          <!-- Timeline Dot -->
+          <!-- 那个点 -->
           <div
             class="absolute left-0 top-1 -translate-x-1/2 w-3 h-3 rounded-full bg-blue-600 ring-4 ring-white"
           ></div>
 
-          <!-- Date Header -->
           <h2 class="text-xl font-semibold text-gray-800 mb-4">
             {{ entry.date }}
           </h2>
 
-          <!-- News Items -->
           <ul class="space-y-3">
             <li
               v-for="(item, itemIndex) in entry.items"
@@ -153,4 +160,3 @@ const timeline: TimelineEntry[] = [
   </main>
 </template>
 
-<style scoped></style>

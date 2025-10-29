@@ -4,16 +4,21 @@ interface Publication {
   year: number
   title: string
   journal: string
-  type: 'preprint' | 'journal'
+  type: 'preprint' | 'journal' | 'conference'
   link?: string
+  correspondingAuthor?: string // 通讯作者姓名，用于加粗显示
 }
 
-defineProps<{
+const props = defineProps<{
   publication: Publication
 }>()
 
-function formatAuthors(authors: string): string {
-  return authors.replace(/McVicker G[#*]?/g, '<strong class="text-gray-900">McVicker G</strong>')
+function formatAuthors(authors: string, correspondingAuthor?: string): string {
+  // 如果指定了通讯作者，则加粗该作者；否则默认加粗 McVicker G
+  const authorToHighlight = correspondingAuthor || ''
+  // 使用正则表达式匹配作者名（包含可能的 # 或 * 符号）
+  const regex = new RegExp(`${authorToHighlight.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[#*]?`, 'g')
+  return authors.replace(regex, `<strong class="text-gray-900">${authorToHighlight}</strong>`)
 }
 </script>
 
@@ -31,8 +36,10 @@ function formatAuthors(authors: string): string {
         :class="{
           'bg-amber-100 text-amber-800': publication.type === 'preprint',
           'bg-blue-100 text-blue-800': publication.type === 'journal',
+          'bg-purple-100 text-purple-800': publication.type === 'conference',
         }"
       >
+        <!-- Preprint Icon -->
         <svg
           v-if="publication.type === 'preprint'"
           class="w-3.5 h-3.5 mr-1"
@@ -44,12 +51,35 @@ function formatAuthors(authors: string): string {
           />
           <path d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" />
         </svg>
-        <svg v-else class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20">
+        <!-- Journal Icon -->
+        <svg
+          v-else-if="publication.type === 'journal'"
+          class="w-3.5 h-3.5 mr-1"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
           <path
             d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"
           />
         </svg>
-        {{ publication.type === 'preprint' ? 'Preprint' : 'Journal' }}
+        <!-- Conference Icon -->
+        <svg
+          v-else-if="publication.type === 'conference'"
+          class="w-3.5 h-3.5 mr-1"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"
+          />
+        </svg>
+        {{
+          publication.type === 'preprint'
+            ? 'Preprint'
+            : publication.type === 'journal'
+              ? 'Journal'
+              : 'Conference'
+        }}
       </span>
     </div>
 
@@ -67,7 +97,7 @@ function formatAuthors(authors: string): string {
 
     <!-- Authors -->
     <p class="text-sm text-gray-600 mb-2 leading-relaxed">
-      <span v-html="formatAuthors(publication.authors)"></span>
+      <span v-html="formatAuthors(publication.authors, publication.correspondingAuthor)"></span>
     </p>
 
     <!-- Journal -->

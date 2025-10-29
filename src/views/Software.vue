@@ -3,6 +3,7 @@ import { onMounted } from 'vue'
 import SoftwareCard from '../components/SoftwareCard.vue'
 import { useScrollAnimation } from '../composables/useScrollAnimation'
 
+// 这里写了三种，paper代表论文（包括期刊和会议），github代表GitHub代码链接，preprint代表预印本，如需添加可以联系我
 interface Link {
   type: 'paper' | 'github' | 'preprint'
   url: string
@@ -17,6 +18,15 @@ interface SoftwareItem {
   badge?: string
 }
 
+// 开发出来的东旭，name代表软件名称，description代表描述，author代表作者，links代表链接（只有三种，具体看上面）
+// 例：
+// {
+//   name: '软件1',
+//   description: '软件1描述',
+//   author: '作者1', //可选，用于显示作者
+//   badge: 'Under Development', //可选，用于右上角标签，比如正在开发中之类的
+//   links: [{ type: '链接类型', url: '链接地址', label: '链接标签' }],
+// },
 const softwareList: SoftwareItem[] = [
   {
     name: 'WASP',
@@ -102,7 +112,7 @@ onMounted(() => {
       allele-specific mapping, and CRISPR screen analysis.
     </p>
 
-    <!-- Software Grid -->
+    <!-- 软件卡片 -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="animate-card" v-for="(software, index) in softwareList" :key="index">
         <SoftwareCard :software="software" />

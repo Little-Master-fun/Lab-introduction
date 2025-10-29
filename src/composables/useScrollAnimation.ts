@@ -129,7 +129,7 @@ export function useScrollAnimation() {
             trigger: element, 
             start: 'top 100%',
             end: 'bottom 20%',
-            markers: true,
+            //markers: true,
             toggleActions: 'play none none reverse',
             ...options,
           },

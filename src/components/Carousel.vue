@@ -57,7 +57,7 @@ onUnmounted(() => {
     @mouseenter="stopAutoplay"
     @mouseleave="startAutoplay"
   >
-    <!-- Images -->
+    <!-- 图片 -->
     <div class="relative h-64 md:h-96 xl:h-128">
       <transition-group name="fade" mode="out-in">
         <div
@@ -71,7 +71,6 @@ onUnmounted(() => {
       </transition-group>
     </div>
 
-    <!-- Previous Button -->
     <button
       @click="prevSlide"
       class="absolute rounded-full left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-3 transition-all opacity-0 group-hover:opacity-100"
@@ -82,7 +81,6 @@ onUnmounted(() => {
       </svg>
     </button>
 
-    <!-- Next Button -->
     <button
       @click="nextSlide"
       class="absolute right-4 rounded-full top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-3 transition-all opacity-0 group-hover:opacity-100"
@@ -93,7 +91,7 @@ onUnmounted(() => {
       </svg>
     </button>
 
-    <!-- Indicators -->
+    <!-- 指示器 -->
     <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
       <button
         v-for="(image, index) in images"

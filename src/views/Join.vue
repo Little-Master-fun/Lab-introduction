@@ -2,7 +2,7 @@
 
 <template>
   <main>
-    <!-- Hero Image -->
+    <!-- 机构图片 -->
     <div class="w-full">
       <img
         src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1200&h=400&fit=crop"
@@ -10,12 +10,10 @@
         class="w-full h-72 md:h-96 xl:h-128 object-cover"
       />
     </div>
-
-    <!-- Main Content -->
+    <!-- 主要介绍内容，一个p标签代表一段，可以添加链接，第一个为不加链接示例，第二个为添加链接示例 -->
     <div class="max-w-6xl mx-auto px-6 py-12">
-      <!-- Top Section: Two Columns -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-        <!-- Left: Join Us -->
+        <!-- Left -->
         <div>
           <h1 class="text-3xl font-semibold text-gray-900 mb-6">Join Us!</h1>
           <div class="space-y-4 text-gray-700 leading-relaxed">
@@ -36,7 +34,7 @@
           </div>
         </div>
 
-        <!-- Right: About Salk Institute -->
+        <!-- Right -->
         <div>
           <h2 class="text-3xl font-semibold text-gray-900 mb-6">About the Salk Institute</h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">
@@ -102,9 +100,9 @@
         </div>
       </div>
 
-      <!-- Position Sections -->
+      <!-- 进一步信息 -->
       <div class="space-y-12">
-        <!-- Graduate Students -->
+        <!-- 研究生 -->
         <section class="border-l-4 border-gray-800 pl-8 py-4">
           <h2 class="text-2xl font-semibold text-gray-900 mb-4">Graduate Students</h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">
@@ -134,7 +132,7 @@
           </div>
         </section>
 
-        <!-- Postdocs -->
+        <!-- 博士后 -->
         <section class="border-l-4 border-gray-800 pl-8 py-4">
           <h2 class="text-2xl font-semibold text-gray-900 mb-4">Postdocs</h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">
@@ -154,7 +152,7 @@
           </div>
         </section>
 
-        <!-- Other Individuals -->
+        <!-- 其他人员 -->
         <section class="border-l-4 border-gray-800 pl-8 py-4">
           <h2 class="text-2xl font-semibold text-gray-900 mb-4">Other Individuals</h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">

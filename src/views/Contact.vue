@@ -12,7 +12,7 @@
 
     <!-- Contact Content Grid -->
     <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
-      <!-- Left: Contact Information -->
+      <!-- 联系信息 -->
       <div class="lg:col-span-2 space-y-10">
         <!-- Address -->
         <div class="border-l-4 border-gray-800 pl-6">
@@ -36,24 +36,23 @@
           </a>
         </div>
 
-        <!-- Phone -->
+        <!-- 电话 -->
         <div class="border-l-4 border-gray-800 pl-6">
           <h2 class="text-lg font-semibold text-gray-900 mb-4 uppercase tracking-wide">Phone</h2>
           <p class="text-gray-700">858-453-4100</p>
         </div>
       </div>
 
-      <!-- Right: Map -->
+      <!-- 地图，如需替换可以叫我改 -->
       <div class="lg:col-span-3">
         <div class="bg-gray-50 border border-gray-300 overflow-hidden">
-          <!-- Map Header -->
+          <!-- 头部 -->
           <div class="bg-gray-800 px-6 py-3 border-b border-gray-700">
             <h2 class="text-sm font-semibold text-white uppercase tracking-wider">
               Entrance & Parking Map
             </h2>
           </div>
 
-          <!-- Map Embed -->
           <div class="p-6">
             <div class="relative w-full" style="padding-bottom: 75%">
               <iframe
@@ -65,12 +64,13 @@
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
+            <!-- 尾部 -->
             <p class="text-xs text-gray-600 mt-4 text-center">
               Harbin Institute of Technology Shenzhen Graduate School
             </p>
           </div>
 
-          <!-- Map Link -->
+          <!-- google 地图链接 -->
           <div class="px-6 pb-6">
             <a
               href="https://www.google.com/maps/search/harbin+institute+of+technology+shenzhen/@22.5855962,113.9669721,16.5z?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"

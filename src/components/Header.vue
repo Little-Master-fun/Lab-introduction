@@ -17,7 +17,6 @@ const closeMobileMenu = () => {
   <header class="bg-gray-900 text-white sticky top-0 z-50 shadow-lg">
     <nav class="max-w-7xl mx-auto px-6 py-4 relative">
       <div class="flex items-center justify-between">
-        <!-- Lab Name -->
         <RouterLink
           to="/"
           class="text-lg font-bold hover:text-gray-300 transition-colors duration-200 cursor-pointer"
@@ -25,7 +24,6 @@ const closeMobileMenu = () => {
           McVicker Lab
         </RouterLink>
 
-        <!-- Desktop Navigation Links -->
         <ul class="hidden md:flex items-center gap-1 text-sm">
           <li>
             <RouterLink
@@ -93,7 +91,7 @@ const closeMobileMenu = () => {
           </li>
         </ul>
 
-        <!-- Mobile Menu Button -->
+        <!-- 移动端 -->
         <button
           @click="toggleMobileMenu"
           class="md:hidden p-2 rounded-lg hover:bg-gray-800 transition-colors"
@@ -124,7 +122,6 @@ const closeMobileMenu = () => {
         </button>
       </div>
 
-      <!-- Mobile Navigation Menu -->
       <Transition
         enter-active-class="transition ease-out duration-200"
         enter-from-class="opacity-0 -translate-y-2"

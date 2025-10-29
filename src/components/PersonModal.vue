@@ -3,7 +3,7 @@ import { watch, onMounted, onUnmounted } from 'vue'
 
 interface Link {
   type: 'cv' | 'scholar' | 'email'
-  url: string
+  url?: string
   label?: string
 }
 

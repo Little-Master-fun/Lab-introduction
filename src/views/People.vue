@@ -4,9 +4,12 @@ import PersonCard from '../components/PersonCard.vue'
 import PersonModal from '../components/PersonModal.vue'
 import { useScrollAnimation } from '../composables/useScrollAnimation'
 
+// 这是人物卡片下的链接，一个type代表链接类型，url代表链接地址，label代表链接标签
+// 我这里写了三种链接，type为cv代表简历，scholar代表学术认证，email代表邮箱，如果需要添加可以联系我
+// url为空时显示为普通文本，不可点击
 interface Link {
   type: 'cv' | 'scholar' | 'email'
-  url: string
+  url?: string
   label?: string
 }
 
@@ -33,11 +36,21 @@ const openPersonModal = (person: Person) => {
 
 const closePersonModal = () => {
   isModalOpen.value = false
-  // 延迟清空数据，等待动画结束
+  // 等待动画结束
   setTimeout(() => {
     selectedPerson.value = null
   }, 300)
 }
+
+// 团队，一个title代表一个团队，members代表团队成员，name代表姓名，role代表角色，image代表图片，bio代表简介，links代表链接（只有三种，具体看上面）
+// links为空代表不加链接，如：{ name: '成员1', role: '角色1', image: '图片1', bio: '简介1' }
+// 例：
+// {
+//   title: '团队1',
+//   members: [
+//     { name: '成员1', role: '角色1', image: '图片1', bio: '简介1', links: [{ type: '链接类型', url: '链接地址', label: '链接标签' }] },
+//   ],
+// },
 
 const team: TeamSection[] = [
   {
@@ -102,17 +115,17 @@ onMounted(() => {
   <main class="max-w-7xl mx-auto px-6 py-12">
     <h1 class="animate-title text-4xl font-light text-gray-800 mb-12">People</h1>
 
-    <!-- Team Sections -->
+    <!-- 团队 -->
     <div class="space-y-16">
       <section v-for="(section, sectionIndex) in team" :key="sectionIndex">
-        <!-- Section Title -->
+        <!-- 标题 -->
         <h2
           class="animate-section-title text-2xl font-semibold text-gray-800 mb-8 border-b-2 border-gray-200 pb-3"
         >
           {{ section.title }}
         </h2>
 
-        <!-- Members Grid -->
+        <!-- 成员卡片 -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div
             class="animate-card"
@@ -125,7 +138,7 @@ onMounted(() => {
       </section>
     </div>
 
-    <!-- Person Details Modal -->
+    <!-- 人员详情 -->
     <PersonModal :person="selectedPerson" :is-open="isModalOpen" @close="closePersonModal" />
   </main>
 </template>

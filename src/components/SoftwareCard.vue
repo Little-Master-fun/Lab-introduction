@@ -22,7 +22,6 @@ defineProps<{
   <article
     class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col"
   >
-    <!-- Card Header -->
     <div class="bg-linear-to-r from-blue-50 to-indigo-50 px-6 py-4 border-b border-gray-100">
       <div class="flex items-start justify-between">
         <h2 class="text-2xl font-bold text-gray-900">{{ software.name }}</h2>
@@ -35,19 +34,15 @@ defineProps<{
       </div>
     </div>
 
-    <!-- Card Body -->
     <div class="p-6 flex-1 flex flex-col">
-      <!-- Description -->
       <p class="text-gray-700 leading-relaxed mb-4 flex-1">
         {{ software.description }}
       </p>
 
-      <!-- Author (if exists) -->
       <p v-if="software.author" class="text-sm text-gray-500 italic mb-4">
         Written by {{ software.author }}
       </p>
 
-      <!-- Links -->
       <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
         <a
           v-for="(link, linkIndex) in software.links"

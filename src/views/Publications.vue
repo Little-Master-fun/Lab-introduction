@@ -3,19 +3,35 @@ import { onMounted } from 'vue'
 import PublicationCard from '../components/PublicationCard.vue'
 import { useScrollAnimation } from '../composables/useScrollAnimation'
 
+// 这里的type我只写了三种，预印本、会议、期刊这三种，如还需添加可联系我
 interface Publication {
   authors: string
   year: number
   title: string
   journal: string
-  type: 'preprint' | 'journal'
+  type: 'preprint' | 'journal' | 'conference'
   link?: string
+  correspondingAuthor?: string // 通讯作者姓名，用于加粗显示
 }
 
 interface PublicationSection {
   title: string
   items: Publication[]
 }
+
+// 论文，一个authors代表作者，year代表年份，title代表标题，journal代表期刊，type代表类型，link代表链接（可为空，则显示纯文本）
+// correspondingAuthor代表通讯作者姓名（可选），填写后会在作者列表中加粗显示该作者（不区分大小写）
+// type为preprint代表预印本，journal代表期刊，conference代表会议
+// 例：
+// {
+//   authors: '作者1, McVicker G#, 作者3',
+//   year: 2025,
+//   title: '标题1',
+//   journal: '期刊1',
+//   type: 'preprint',
+//   link: '',  // 可为空，则显示纯文本
+//   correspondingAuthor: 'McVicker G', // 会将这个作者加粗显示（一般用于主要复制人）
+// },
 
 const sections: PublicationSection[] = [
   {
@@ -27,8 +43,9 @@ const sections: PublicationSection[] = [
         title:
           'Joint single-cell profiling of CRISPR-Cas9 edits and transcriptomes reveals widespread off-target events and their effects on gene expression',
         journal: 'bioRxiv',
-        type: 'preprint',
-        link: '#',
+        type: 'conference',
+        link: '',
+        correspondingAuthor: 'McVicker G',
       },
       {
         authors: 'Laub D, Ho A, Jaureguy J, Kile A, Salem RM, McVicker G#, Carriere',
@@ -38,6 +55,7 @@ const sections: PublicationSection[] = [
         journal: 'bioRxiv',
         type: 'preprint',
         link: '#',
+        correspondingAuthor: 'McVicker G',
       },
       {
         authors:
@@ -130,21 +148,21 @@ onMounted(() => {
   <main class="max-w-6xl mx-auto px-6 py-12">
     <h1 class="animate-title text-4xl font-light text-gray-800 mb-12">Publications</h1>
 
-    <!-- Publication Sections -->
+    <!-- 论文 -->
     <div class="space-y-16">
       <section
         class="animate-section"
         v-for="(section, sectionIndex) in sections"
         :key="sectionIndex"
       >
-        <!-- Section Title -->
+        <!-- 标题 -->
         <div class="flex items-center gap-4 mb-8">
           <h2 class="text-3xl font-semibold text-gray-800">{{ section.title }}</h2>
           <div class="flex-1 h-px bg-gray-300"></div>
           <span class="text-sm text-gray-500">{{ section.items.length }} items</span>
         </div>
 
-        <!-- Publication Cards -->
+        <!-- 论文卡片 -->
         <div class="space-y-6">
           <div class="animate-card" v-for="(pub, pubIndex) in section.items" :key="pubIndex">
             <PublicationCard :publication="pub" />
