@@ -1,9 +1,20 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { onMounted } from 'vue'
+import { useScrollAnimation } from '../composables/useScrollAnimation'
+
+const { fadeInUp, staggerFadeInUp,slideInLeft } = useScrollAnimation()
+
+onMounted(() => {
+  // fadeInUp('.animate-image')
+  staggerFadeInUp('.animate-title')
+  slideInLeft('.animate-section')
+})
+</script>
 
 <template>
   <main>
     <!-- 机构图片 -->
-    <div class="w-full">
+    <div class="w-full animate-image">
       <img
         src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1200&h=400&fit=crop"
         alt="Salk Institute"
@@ -14,7 +25,7 @@
     <div class="max-w-6xl mx-auto px-6 py-12">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
         <!-- Left -->
-        <div>
+        <div class="animate-title">
           <h1 class="text-3xl font-semibold text-gray-900 mb-6">Join Us!</h1>
           <div class="space-y-4 text-gray-700 leading-relaxed">
             <p>
@@ -35,7 +46,7 @@
         </div>
 
         <!-- Right -->
-        <div>
+        <div class="animate-title">
           <h2 class="text-3xl font-semibold text-gray-900 mb-6">About the Salk Institute</h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">
             <p>
@@ -103,7 +114,7 @@
       <!-- 进一步信息 -->
       <div class="space-y-12">
         <!-- 研究生 -->
-        <section class="border-l-4 border-gray-800 pl-8 py-4">
+        <section class="animate-section border-l-4 border-gray-800 pl-8 py-4">
           <h2 class="text-2xl font-semibold text-gray-900 mb-4">Graduate Students</h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">
             <p>
@@ -133,7 +144,7 @@
         </section>
 
         <!-- 博士后 -->
-        <section class="border-l-4 border-gray-800 pl-8 py-4">
+        <section class="animate-section border-l-4 border-gray-800 pl-8 py-4">
           <h2 class="text-2xl font-semibold text-gray-900 mb-4">Postdocs</h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">
             <p>
@@ -153,7 +164,7 @@
         </section>
 
         <!-- 其他人员 -->
-        <section class="border-l-4 border-gray-800 pl-8 py-4">
+        <section class="animate-section border-l-4 border-gray-800 pl-8 py-4">
           <h2 class="text-2xl font-semibold text-gray-900 mb-4">Other Individuals</h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">
             <p>
