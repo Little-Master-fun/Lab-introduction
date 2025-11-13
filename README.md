@@ -1,6 +1,7 @@
 # 实验室展示网站 - Lab Introduction
 
 这是一个基于 Vue 3 + TypeScript + Tailwind CSS 构建的医学实验室展示网站，用于展示实验室的研究方向、团队成员、发表论文、软件工具等信息。
+页面示例：https://little-master-fun.github.io/Lab-introduction/
 
 ## 目录
 
@@ -15,7 +16,7 @@
 - **构建工具**: Vite
 - **路由**: Vue Router 4
 - **样式**: Tailwind CSS 4
-- **动画**: GSAP
+- **动画**: GSAP、Lenis
 - **图标**: Bootstrap Icons
 - **开发语言**: TypeScript
 
