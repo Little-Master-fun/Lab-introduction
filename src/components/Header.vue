@@ -49,14 +49,14 @@ const closeMobileMenu = () => {
               >People</RouterLink
             >
           </li>
-          <li>
+          <!-- <li>
             <RouterLink
               to="/photos"
               class="px-4 py-2 hover:text-white transition-all duration-200 active:bg-gray-950"
               active-class="bg-gray-800 text-white border-b-2 border-white"
               >Photos</RouterLink
             >
-          </li>
+          </li> -->
           <li>
             <RouterLink
               to="/publications"
@@ -65,14 +65,14 @@ const closeMobileMenu = () => {
               >Publications</RouterLink
             >
           </li>
-          <li>
+          <!-- <li>
             <RouterLink
               to="/software"
               class="px-4 py-2 hover:text-white transition-all duration-200 active:bg-gray-950"
               active-class="bg-gray-800 text-white border-b-2 border-white"
               >Software</RouterLink
             >
-          </li>
+          </li> -->
           <li>
             <RouterLink
               to="/join"

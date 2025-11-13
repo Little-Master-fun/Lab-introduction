@@ -35,101 +35,132 @@ interface PublicationSection {
 
 const sections: PublicationSection[] = [
   {
-    title: 'Preprints',
+    title: 'Journal Publications',
     items: [
       {
-        authors: 'Lorenzini MH*, Balderson B*, Sajeev K, Ho AJ, McVicker G',
-        year: 2025,
+        authors: 'Weixing Yu, Runxin Zhou, Nan Li, Zhi-Chao Lei, Dingyuan Guo, Fei Peng, Yan Li, Xue Bai, Shan Feng, Yu Wang, Jie He, Sibi Yin, Xiao Zeng, Leya He, Yuan Gao, Mingchang Li, Yusong R. Guo, Ke Liu & Yugang Wang',
+        year: 2023,
         title:
-          'Joint single-cell profiling of CRISPR-Cas9 edits and transcriptomes reveals widespread off-target events and their effects on gene expression',
-        journal: 'bioRxiv',
-        type: 'conference',
-        link: '',
-        correspondingAuthor: 'McVicker G',
+          'Histone tyrosine sulfation by SULT1B1 regulates H4R3me2a and gene transcription',
+        journal: 'Nature Chemical Biology',
+        type: 'journal',
+        link: 'https://www.nature.com/articles/s41589-023-01267-9',
       },
       {
-        authors: 'Laub D, Ho A, Jaureguy J, Kile A, Salem RM, McVicker G#, Carriere',
-        year: 2025,
+        authors: 'Ke Liu, Martin Witteveen-Lane, Benjamin S Glicksberg, Omkar Kulkarni, Rama Shankar, Evgeny Chekalin, Shreya Paithankar, Jeanne Yang, Dave Chesla, Bin Chen',
+        year: 2022,
         title:
-          'GenVarLoader: An accelerated dataloader for applying deep learning to personalized genomics',
-        journal: 'bioRxiv',
-        type: 'preprint',
-        link: '#',
-        correspondingAuthor: 'McVicker G',
+          'BGLM: big data-guided LOINC mapping with multi-language support',
+        journal: 'JAMIA Open',
+        type: 'journal',
+        link: '',
       },
       {
         authors:
-          'Sen A*, Xu Z*, Tyndale ST, Yasis J, Cho CY, Bump R, Chandran S, Lue L, Fu Y, Petersen LK, Shokhniev M, Kuo DJ, McVicker G#, Dixon JR#',
-        year: 2024,
+          'Jing Xing, Shreya Paithankar, Ke Liu, Katie Uhl, Xiaopeng Li, Meehyun Ko, Seungtaek Kim, Jeremy Haskins, Bin Chen',
+        year: 2021,
         title:
-          'Heterogeneity in chromatin structure drives core regulatory pathways in B-cell Acute Lymphoblastic Leukemia',
-        journal: 'bioRxiv',
-        type: 'preprint',
-        link: '#',
+          'Published anti-SARS-CoV-2 in vitro hits share common mechanisms of action that synergize with antivirals',
+        journal: 'Briefings in Bioinformatics',
+        type: 'journal',
+        link: 'https://doi.org/10.1093/jamiaopen/ooac099',
+      },
+      {
+        authors:
+          'Ke Liu, Elizabeth Theusch, Yun Zhou, Tal Ashuach, Andrea S. Dose, Peter J. Bickel, Marisa W. Medina, Haiyan Huang',
+        year: 2019,
+        title:
+          'GeneFishing to reconstruct comprehensive context-specific portraits of biological processes and its application to cholesterol metabolism',
+        journal: 'Proceedings of the National Academy of Sciences of the United States of America',
+        type: 'journal',
+        link: 'https://doi.org/10.1073/pnas.1820340116',
+      },
+      {
+        authors:
+          'Ke Liu, Patric Newbury, Benjamin Glicksberg, Eran Andrechek, Bin Chen',
+        year: 2019,
+        title:
+          'Evaluating cell lines as models for metastatic breast cancer through integrative analysis of genomic data',
+        journal: 'Nature Communications',
+        type: 'journal',
+        link: 'https://www.nature.com/articles/s41467-019-10148-6',
+      },
+      {
+        authors:
+          'Yugang Wang, Yusong R. Guo, Ke Liu, Zheng Yin, Rui Liu, Yan Xia, Lin Tan, Peiying Yang, Jong-Ho Lee, Xin-jian Li, David Hawke, Yanhua Zheng, Xu Qian, Jianxin Lyu, Jie He, Dongming Xing, Yizhi Jane Tao and Zhimin Lu',
+        year: 2017,
+        title:
+          'KAT2A coupled with the α-KGDH complex acts as a histone H3 succinyltransferase',
+        journal: 'Nature',
+        type: 'journal',
+        link: 'https://www.nature.com/articles/nature25003',
+      },
+      {
+        authors:
+          'Ke Liu, Zhangming Yan, Yuchao Li, Zhirong Sun',
+        year: 2013,
+        title:
+          'Linc2GO: a human lincRNA function annotation resource based on ceRNA hypothesis',
+        journal: 'Bioinformatics',
+        type: 'journal',
+        link: 'https://academic.oup.com/bioinformatics/article/29/17/2221/242211',
       },
     ],
   },
   {
-    title: 'Publications',
+    title: 'Conferences',
     items: [
       {
-        authors:
-          "Arthur TD*, Nguyen JP*, D'Antonio-Chronowska A, Jaureguy J, Silva N, Henson B, iPSCORE Consortium, Panopoulos AD, Izpisua Belmonte JC, D'Antonio M, McVicker G, Frazer KA",
+        authors: 'Ke Liu, Omkar Kulkarni, Martin Witteveen-Lane, Bin Chen, Dave Chesla',
+        year: 2022,
+        title:
+          'MetBERT: a generalizable deep learning model for prediction of metastatic cancer',
+        journal: 'AMIA 2022 Informatics Summit',
+        type: 'conference',
+        link: '',
+      },
+    ],
+  },
+  {
+    title: 'Preprints',
+    items: [
+      {
+        authors: 'Shumin Yin, Ke Liu',
         year: 2025,
         title:
-          'Multiomic QTL mapping reveals phenotypic complexity of GWAS loci and prioritizes putative causal variants',
-        journal: 'Cell Genomics',
-        type: 'journal',
-        link: '#',
+          'CFMF: A Clustering-Free Cell Marker Finder for Single-Cell Transcriptomics Data',
+        journal: 'bioRxiv',
+        type: 'preprint',
+        link: 'https://doi.org/10.1101/2025.10.26.683836',
+      },
+      {
+        authors: 'Chunyang Fu, Ke Liu',
+        year: 2025,
+        title:
+          'Pan-Cancer Single-Cell Profiling Uncovers the Biological Characteristics of Cancer-Testis Genes',
+        journal: 'bioRxiv',
+        type: 'preprint',
+        link: 'https://doi.org/10.1101/2025.08.25.672079',
       },
       {
         authors:
-          'Zhou J*, Guruvayurappan K*, Shushan Toneyan, Chen HY, Chen AR, Peter Koo, McVicker G',
+          'Xueying Liu, Weixing Yu, Xiuyuan Jin, Yugang Wang, Ke Liu',
+        year: 2025,
+        title:
+          'Multi-omics evaluation of cell lines as models for metastatic prostate cancer',
+        journal: 'bioRxiv',
+        type: 'preprint',
+        link: 'https://doi.org/10.1101/2025.07.17.665334',
+      },
+      {
+        authors:
+          'Jing Li, Yuan Gao, Shouhui Guo, Qingzhen Hou, Shisong Zhang, Weixing Yu, Ke Liu',
         year: 2024,
         title:
-          'Analysis of CRISPR perturbations indicates that enhancers predominantly act multiplicatively',
-        journal: 'Cell Genomics',
-        type: 'journal',
-        link: '#',
-      },
-      {
-        authors:
-          'Zhou JL, de Guglielmo G, Ho AJ, Kallupi M, Pokhrel N, Li H, Chitre AS, Munro D, Mohammadi P, Carrette LLG, George O, Palmer AA, McVicker G*, Telese F*',
-        year: 2023,
-        title:
-          'Single-nucleus genomics in outbred rats with divergent cocaine addiction-like behaviors reveals changes in amygdala GABAergic inhibition',
-        journal: 'Nature Neuroscience',
-        type: 'journal',
-        link: '#',
-      },
-      {
-        authors:
-          "Chen HY*, Lorenzini MH*, Lavalle SN*, Sajeev K, Fonseca A, Fiaux PC, Sen A, Luthra I, Ho AJ, Chen AR, Guruvayurappan K, O'Connor C, McVicker G",
-        year: 2023,
-        title:
-          'Deletion mapping of regulatory elements for GATA3 in T cells reveals a distal enhancer involved in allergic diseases',
-        journal: 'American Journal of Human Genetics',
-        type: 'journal',
-        link: '#',
-      },
-      {
-        authors:
-          'Xu Z*, Lee DS*, Chandran S, Le VT, Bump R, Yasis J, Dallarda S, Marcotte S, Clock B, Haghani N, Cho CY, Akdemir K, Tyndale S, Futsreal PA, McVicker G, Wahl GM, Dixon JR',
-        year: 2022,
-        title: 'Structural variants drive context-dependent oncogene activation in cancer',
-        journal: 'Nature',
-        type: 'journal',
-        link: '#',
-      },
-      {
-        authors:
-          'Chen PB, Fiaux PC, Zhang K, Li B, Kubo N, Jiang S, Hu R, Rooholfada E, Wu S, Wang M, Wang W, McVicker G, Mischel P, Ren B',
-        year: 2022,
-        title:
-          'Systematic discovery and functional dissection of enhancers needed for cancer cell fitness and proliferation',
-        journal: 'Cell Reports',
-        type: 'journal',
-        link: '#',
+          'Single-cell molecular subtyping reveals novel intratumor heterogeneity in human Basal-like breast cancer',
+        journal: 'bioRxiv',
+        type: 'preprint',
+        link: 'https://doi.org/10.1101/2024.06.02.597060',
       },
     ],
   },

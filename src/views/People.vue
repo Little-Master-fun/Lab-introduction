@@ -7,7 +7,23 @@ import { useScrollAnimation } from '../composables/useScrollAnimation'
 // 这是一个图片引入示例
 import avatar from '@avatar/avatar.jpg'
 
-
+// 引入所有团队成员头像
+import keliuAvatar from '@avatar/KeLiu.png'
+import jinxiuyuanAvatar from '@avatar/JinXiuyuan.png'
+import chunyangfuAvatar from '@avatar/DuChunyang.png'
+import liuyangAvatar from '@avatar/LiuYang.png'
+import liuxueyingAvatar from '@avatar/LiuXueying.png'
+import haoyueqiAvatar from '@avatar/HaoYueqi.png'
+import wangziyiAvatar from '@avatar/WangZiyi.png'
+import bianmaowangAvatar from '@avatar/BianMaowang.png'
+import yinshumingAvatar from '@avatar/YinShumin.png'
+import zhangsiruiAvatar from '@avatar/ZhangSirui.png'
+import yujifengAvatar from '@avatar/YuJifeng.png'
+import leifuhanAvatar from '@avatar/LeiFuhan.png'
+import juweihangAvatar from '@avatar/JuWeihang\'.png'
+import shashihangAvatar from '@avatar/ShaShihang.png'
+import huangyinzhiAvatar from '@avatar/HuangYinzhi.png'
+import sunqichenAvatar from '@avatar/SunQichen.png'
 // 这是人物卡片下的链接，一个type代表链接类型，url代表链接地址，label代表链接标签
 // 我这里写了三种链接，type为cv代表简历，scholar代表学术认证，email代表邮箱，如果需要添加可以联系我
 // url为空时显示为普通文本，不可点击
@@ -61,47 +77,161 @@ const team: TeamSection[] = [
     title: 'Principal Investigator',
     members: [
       {
-        name: 'Graham McVicker',
-        role: 'Principal Investigator',
-        // 使用引入的图片
-        image: avatar,
-        bio: 'Graham received his B.Sc. in Computer Science from the University of British Columbia and subsequently worked on the Ensembl Genome Browser at the European Bioinformatics Institute. Graham then did his Ph.D. with Phil Green at the University of Washington where he studied how mutation and selection shape human genetic variation. In his postdoctoral research with Jonathan Pritchard at the University of Chicago and Stanford University, Graham researched how human genetic variation affects chromatin state. Since 2016, Graham has been a PI in the Laboratory of Genetics and the Integrative Biology Laboratory at the Salk Institute.',
+        name: 'Ke Liu',
+        role: 'Ph.D.',
+        image: keliuAvatar,
+        bio: 'Dr. Ke Liu holds an interdisciplinary background in computer science, biology, and statistics. His research focuses on leveraging advanced computational approaches—such as statistical learning and artificial intelligence — to extract insights from biomedical big data, with the goal of advancing translational medical research from bench to bedside for complex diseases. Dr. Liu completed his undergraduate studies in Computer Science and Technology at Shandong University (2004–2008) and earned his Ph.D. in Biology from Tsinghua University (2008–2015). He further enriched his expertise through postdoctoral training at the University of California, Berkeley (Department of statistics, 2015 – 2017), the University of California, San Francisco (Institute for Computational Health Sciences, 2018), and Michigan State University (Department of Pediatrics and Human Development, 2018–2022).',
         links: [
-          { type: 'cv', url: '#', label: 'CV' },
-          { type: 'scholar', url: '#', label: 'Google Scholar' },
-          { type: 'email', url: 'mailto:gmcvicker@salk.edu', label: 'gmcvicker@salk.edu' },
+          { type: 'email', url: 'mailto:keliu.iluke@email.sdu.edu.cn', label: 'keliu.iluke@email.sdu.edu.cn' },
         ],
       },
     ],
   },
   {
-    title: 'Postdoctoral Scholars',
+    title: 'Ph.D. Students',
     members: [
       {
-        name: 'Shanna Lavalle',
-        role: 'Postdoctoral Scholar',
-        image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop',
-        bio: "Shanna Lavalle received her undergraduate degree from California State University, Long Beach, where she majored in Biology-Physiology with a minor in Chemistry. She completed her Ph.D. at the University of California, San Diego, in Dr. Pamela Mellon's lab. In her thesis she studied how the Kiss1 neuroendocrine gene is regulated by the homeodomain transcription factors SIX3 and VAX1 to influence reproduction.",
-        links: [{ type: 'email', url: 'mailto:slavalle@salk.edu', label: 'slavalle@salk.edu' }],
+        name: 'Jin Xiuyuan',
+        role: 'Ph.D. Student',
+        image: jinxiuyuanAvatar,
+        bio: 'Jin Xiuyuan, Ph.D. Student, received her Master of Biostatistics from Shandong University in 2023. Her current research focuses on using multi-omics approaches to elucidate the cellular heterogeneity and molecular mechanisms of Congenital Pulmonary Airway Malformation (CPAM) in children.',
+        links: [
+          { type: 'email', url: 'mailto:jinxiuyuan@mail.sdu.edu.cn', label: 'jinxiuyuan@mail.sdu.edu.cn' },
+        ],
       },
       {
-        name: 'Brad Balderson',
-        role: 'Postdoctoral Scholar',
-        image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop',
-        bio: 'Brad received his undergraduate degree with a dual major in Bioinformatics at the University of Queensland (UQ), Australia. Brad completed his PhD in 2023 within the labs of Prof. Stefan Thor and A/Prof. Mikael Boden (UQ), where he designed novel computational methods to statistically determine distinct populations of cells in single cell transcriptomics data. For his postdoc in the McVicker lab, Brad is collaborating with the Palmer and Telese labs and developing machine learning methods to analyze single cell and genetic data in an outbred rat model of opioid addiction.',
-        links: [{ type: 'email', url: 'mailto:bbalderson@salk.edu', label: 'bbalderson@salk.edu' }],
+        name: 'Fu Chunyang',
+        role: 'Ph.D. Student',
+        image: chunyangfuAvatar,
+        bio: 'Fu Chunyang, Ph.D. Student, graduated from Shandong University with a Bachelor\'s degree in Preventive Medicine. He joined the laboratory in 2022 and transitioned to the Ph.D. program in 2024.',
+        links: [
+          { type: 'email', url: 'mailto:chunyangfu@mail.sdu.edu.cn', label: 'chunyangfu@mail.sdu.edu.cn' },
+        ],
+      },
+      {
+        name: 'Liu Yang',
+        role: 'Ph.D. Student',
+        image: liuyangAvatar,
+        bio: 'Liu Yang, Ph.D. Student, holds a Bachelor\'s degree in Medicine from Shandong University. He joined the laboratory as a Master\'s student in 2023 and transitioned to the Ph.D. program in 2025. His research focuses on utilizing omics data to elucidate the pathogenic mechanisms of pediatric pulmonary mucoepidermoid carcinoma.',
+        links: [],
       },
     ],
   },
   {
-    title: 'Staff Scientists',
+    title: 'Master\'s Students',
     members: [
       {
-        name: 'Mickey Lorenzini',
-        role: 'Staff Scientist',
-        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
-        bio: 'Mickey defended his Ph.D. in April 2025 and has continued on as a Staff Scientist in the McVicker lab where he is continuing to develop the Superb-seq technology and using single-cell approaches to characterize how genome perturbations affect gene expression. Mickey completed his undergraduate degree at the University of Kansas, during which time he worked in bioinformatics and the biochemistry of cell signaling. Mickey then moved to San Diego where he completed his Ph.D. at UC San Diego in the lab of Dr. Gene Yeo.',
-        links: [{ type: 'email', url: 'mailto:mlorenzini@salk.edu', label: 'mlorenzini@salk.edu' }],
+        name: 'Liu Xueying',
+        role: 'Master\'s Student',
+        image: liuxueyingAvatar,
+        bio: 'Liu Xueying, Master\'s Student, received her Bachelor\'s degree in Biology from China Pharmaceutical University in 2023. She is currently pursuing a Master\'s degree in Biostatistics at Shandong University. Her research interests lie in cancer genomics and computational methods for understanding tumor biology.',
+        links: [
+          { type: 'email', url: 'mailto:xueyingliuu@126.com', label: 'xueyingliuu@126.com' },
+        ],
+      },
+      {
+        name: 'Hao Yueqi',
+        role: 'Master\'s Student',
+        image: haoyueqiAvatar,
+        bio: 'Hao Yueqi, Master\'s Student, graduated from Hainan Normal University with a Bachelor\'s degree in Statistics. She is currently a Master\'s student in the laboratory, and her research direction is bioinformatics.',
+        links: [
+          { type: 'email', url: 'mailto:haoyueqi0724@163.com', label: 'haoyueqi0724@163.com' },
+        ],
+      },
+      {
+        name: 'Wang Ziyi',
+        role: 'Master\'s Student',
+        image: wangziyiAvatar,
+        bio: 'Wang Ziyi, Master\'s Student, graduated from Shanxi Medical University with a Bachelor\'s degree in Information Management and Information Systems. She entered Shandong University in 2024 to pursue a Master\'s degree in Public Health (Biostatistics). Her current research focuses on using transcriptomics technologies to identify the tissue of origin for Cancers of Unknown Primary (CUP).',
+        links: [
+          { type: 'email', url: 'mailto:1303610295@qq.com', label: '1303610295@qq.com' },
+        ],
+      },
+      {
+        name: 'Bian Maowang',
+        role: 'Master\'s Student',
+        image: bianmaowangAvatar,
+        bio: 'Bian Maowang, Master\'s Student, holds a Bachelor\'s degree in Preventive Medicine. He is currently pursuing a Master\'s degree in Biostatistics in the laboratory, with research interests in biomedicine. His hobbies include fitness and playing badminton.',
+        links: [
+          { type: 'email', url: 'mailto:bianmaowang2002@163.com', label: 'bianmaowang2002@163.com' },
+        ],
+      },
+      {
+        name: 'Yin Shumin',
+        role: 'Master\'s Student',
+        image: yinshumingAvatar,
+        bio: 'Yin Shumin, Master\'s Student, graduated from Shandong University with a Bachelor\'s degree. Her research focuses on algorithms for identifying marker genes in single-cell transcriptomics.',
+        links: [
+          { type: 'email', url: 'mailto:shuminyin@mail.sdu.edu.cn', label: 'shuminyin@mail.sdu.edu.cn' },
+        ],
+      },
+      {
+        name: 'Zhang Sirui',
+        role: 'Master\'s Student',
+        image: zhangsiruiAvatar,
+        bio: 'Zhang Sirui, Master\'s Student, graduated from Shandong University with a Bachelor\'s degree in Preventive Medicine. His research involves using statistical learning to evaluate the perturbing effects of the Hepatitis B Virus (HBV) on alternative splicing in hepatocytes.',
+        links: [
+          { type: 'email', url: 'mailto:3494747883@qq.com', label: '3494747883@qq.com' },
+        ],
+      },
+    ],
+  },
+  {
+    title: 'Undergraduate Students',
+    members: [
+      {
+        name: 'Yu Jifeng',
+        role: 'Undergraduate Student',
+        image: yujifengAvatar,
+        bio: 'Yu Jifeng, Undergraduate Student, majors in Biomedical Data Science at Shandong University. His research focuses on enhancing the interpretability of autoencoder models in genomics by mapping latent neurons to biological pathways, aiming to develop methods for linking model activations to tissue-specific functions to discover biomarkers.',
+        links: [
+          { type: 'email', url: 'mailto:202200222007@mail.sdu.edu.cn', label: '202200222007@mail.sdu.edu.cn' },
+        ],
+      },
+      {
+        name: 'Lei Fuhan',
+        role: 'Undergraduate Student',
+        image: leifuhanAvatar,
+        bio: 'Lei Fuhan, Undergraduate Student, majors in Biomedical Data Science at Shandong University. Her research direction involves interdisciplinary studies in bioinformatics and artificial intelligence.',
+        links: [
+          { type: 'email', url: 'mailto:202200222005@mail.sdu.edu.cn', label: '202200222005@mail.sdu.edu.cn' },
+        ],
+      },
+      {
+        name: 'Ju Weihang',
+        role: 'Undergraduate Student',
+        image: juweihangAvatar,
+        bio: 'Ju Weihang, Undergraduate Student, majors in Biomedical Data Science at Shandong University.',
+        links: [
+          { type: 'email', url: 'mailto:772853178@qq.com', label: '772853178@qq.com' },
+        ],
+      },
+      {
+        name: 'Sha Shihang',
+        role: 'Undergraduate Student',
+        image: shashihangAvatar,
+        bio: 'Sha Shihang, Undergraduate Student, majors in Biomedical Data Science at Shandong University.',
+        links: [
+          { type: 'email', url: 'mailto:sha714204078@outlook.com', label: 'sha714204078@outlook.com' },
+        ],
+      },
+      {
+        name: 'Huang Yinzhi',
+        role: 'Undergraduate Student',
+        image: huangyinzhiAvatar,
+        bio: 'Huang Yinzhi, Undergraduate Student, majors in Biomedical Data Science at Shandong University.',
+        links: [
+          { type: 'email', url: 'mailto:huangyinzhi@mail.sdu.edu.cn', label: 'huangyinzhi@mail.sdu.edu.cn' },
+        ],
+      },
+      {
+        name: 'Sun Qichen',
+        role: 'Undergraduate Student',
+        image: sunqichenAvatar,
+        bio: 'Sun Qichen, Undergraduate Student, majors in Biomedical Data Science at Shandong University.',
+        links: [
+          { type: 'email', url: 'mailto:1207478481@qq.com', label: '1207478481@qq.com' },
+        ],
       },
     ],
   },

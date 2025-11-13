@@ -29,83 +29,31 @@ onMounted(() => {
           <h1 class="text-3xl font-semibold text-gray-900 mb-6">Join Us!</h1>
           <div class="space-y-4 text-gray-700 leading-relaxed">
             <p>
-              We are an interdisciplinary group of researchers studying the genetics of chromatin
-              and gene regulation. We welcome inquiries from individuals from experimental,
-              computational, and statistical backgrounds.
-            </p>
-            <p>
-              Our laboratory uses naturally occurring human genetic variation, genome perturbations,
-              and computational analysis to determine how genetic variants affect chromatin state
-              and gene expression. We are also interested in linking regulatory variation with
-              disease risk. In much of our research we develop statistical and computational methods
-              so that we can analyze and interpret data from genomics experiments including
-              single-cell ATAC-seq, RNA-seq, reporter assays and CRISPR-based genome perturbations.
-              If this type of research sounds exciting to you, contact us.
+              We are an interdisciplinary research team dedicated to leveraging artificial intelligence and
+              statistical learning methods to analyze biomedical big data, with the goal of tackling major health
+              challenges such as cancer and genetic diseases. We welcome students and colleagues with
+              backgrounds in life sciences, medicine, mathematical statistics, physics, and related fields to join
+              us. Our lab focuses on the intersection of biomedical big data and advanced computational
+              methods. Key research areas include cell-specific transcriptional regulation based on single-cell
+              omics data, interpretability research in deep learning, and the analysis of cancer metastasis
+              mechanisms coupled with computational screening for anti-metastatic drugs using multi-omics
+              data. We emphasize the integration of computational method development with real-world
+              biological and medical questions, driving translational research from data to discovery.
             </p>
           </div>
         </div>
 
         <!-- Right -->
         <div class="animate-title">
-          <h2 class="text-3xl font-semibold text-gray-900 mb-6">About the Salk Institute</h2>
+          <h2 class="text-3xl font-semibold text-gray-900 mb-6">About the National Institute of Healthcare Big Data</h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">
             <p>
-              <a href="https://www.salk.edu" target="_blank" class="text-blue-600 hover:underline"
-                >The Salk Institute</a
-              >
-              is a great place to work! It was founded in 1960 by
-              <a
-                href="https://en.wikipedia.org/wiki/Jonas_Salk"
-                target="_blank"
-                class="text-blue-600 hover:underline"
-                >Jonas Salk</a
-              >, the developer of the polio vaccine, and was designed by the renowned architect
-              <a
-                href="https://en.wikipedia.org/wiki/Louis_Kahn"
-                target="_blank"
-                class="text-blue-600 hover:underline"
-                >Louis Kahn</a
-              >. Today, the Salk Institute is an architectural landmark and is one of the top
-              biological research institutes in the world.
-            </p>
-            <p>
-              The Salk Institute is located in beautiful
-              <a
-                href="https://en.wikipedia.org/wiki/La_Jolla"
-                target="_blank"
-                class="text-blue-600 hover:underline"
-                >La Jolla</a
-              >, a community of
-              <a
-                href="https://en.wikipedia.org/wiki/San_Diego"
-                target="_blank"
-                class="text-blue-600 hover:underline"
-                >San Diego, California</a
-              >. It is close to many other world-class research institutes including the
-              <a href="https://ucsd.edu" target="_blank" class="text-blue-600 hover:underline"
-                >University of California San Diego</a
-              >,
-              <a href="https://scripps.edu" target="_blank" class="text-blue-600 hover:underline"
-                >Scripps Research</a
-              >, the
-              <a href="https://lji.org" target="_blank" class="text-blue-600 hover:underline"
-                >La Jolla Institute for Immunology</a
-              >,
-              <a href="https://sbp.edu" target="_blank" class="text-blue-600 hover:underline"
-                >Sanford Burnham Prebys</a
-              >
-              and the
-              <a href="https://www.jcvi.org" target="_blank" class="text-blue-600 hover:underline"
-                >J. Craig Venter Institute</a
-              >. Many biotechnology companies such as
-              <a href="https://illumina.com" target="_blank" class="text-blue-600 hover:underline"
-                >Illumina</a
-              >
-              and
-              <a href="https://novartis.com" target="_blank" class="text-blue-600 hover:underline"
-                >Novartis</a
-              >
-              are nearby.
+              Our lab is centrally supported by the National Institute of Healthcare Big Data. This institute is a
+              national-level innovation platform for healthcare big data, possessing unique, population-scale
+              life-cycle health data resources covering tens of millions of individuals. This provides unparalleled
+              conditions for conducting real-world research with significant societal impact. Here, you will not
+              only engage in cutting-edge research on a first-class academic platform but also personally
+              contribute to advancing the field of national health medical big data.
             </p>
           </div>
         </div>
@@ -118,61 +66,43 @@ onMounted(() => {
           <h2 class="text-2xl font-semibold text-gray-900 mb-4">Graduate Students</h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">
             <p>
-              Graduate students can join the McVicker Lab through training programs at UCSD. We are
-              a part of the
-              <a
-                href="https://bioinformatics.ucsd.edu"
-                target="_blank"
-                class="text-blue-600 hover:underline"
-                >Bioinformatics and Systems Biology</a
-              >
-              program and are accepting rotation students. Interested students from other programs
-              at UCSD, such as
-              <a href="https://bms.ucsd.edu" target="_blank" class="text-blue-600 hover:underline"
-                >Biomedical Sciences</a
-              >
-              and
-              <a
-                href="https://biology.ucsd.edu"
-                target="_blank"
-                class="text-blue-600 hover:underline"
-                >Biological Sciences</a
-              >
-              are encouraged to contact the lab to discuss the possibility of rotating.
+              We recruit doctoral and master's students interested in bioinformatics and computational
+              biology. Students can join the lab through relevant programs at Shandong University, such as
+              Biostatistics, Bioinformatics, and Data Science. We provide systematic interdisciplinary research
+              training, high-performance computing resources, and encourage students to pursue innovative
+              research aligned with their interests. We also welcome inquiries and potential rotations for
+              students from other related schools and departments within the university.
             </p>
           </div>
         </section>
 
         <!-- 博士后 -->
         <section class="animate-section border-l-4 border-gray-800 pl-8 py-4">
-          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Postdocs</h2>
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Postdoctoral Fellows</h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">
             <p>
-              We welcome inquiries from postdoctoral candidates. Individuals should have strong
-              quantitative and/or experimental backgrounds. Applicants must have, or expect to
-              receive, a Ph.D. in a relevant discipline (Computer Science, Genetics, Statistics,
-              Molecular Biology, Immunology, Bioinformatics, etc.).
-            </p>
-            <p>
-              <strong>To apply:</strong> Email Graham (
-              <a href="mailto:gmcvicker@salk.edu" class="text-blue-600 hover:underline"
-                >gmcvicker@salk.edu</a
-              >) with a brief cover letter describing your background and research interests, your
-              CV, and contact information for 2-3 references.
+              We sincerely invite applications for postdoctoral researchers who have obtained or are about to
+              obtain a Ph.D. in bioinformatics, computational biology, computer science, statistics, or related
+              fields. Applicants should possess strong programming and data analysis skills, or have extensive
+              experience with omics data. We offer competitive compensation, excellent career development
+              support, and are committed to assisting successful applicants in applying for various research
+              grants. If you are interested in applying or would like more information, please send your CV, a
+              statement of research interests, and other relevant materials to:
+              <a href="mailto:keliu.iluke@email.sdu.edu.cn" class="text-blue-600 hover:underline"
+                >keliu.iluke@email.sdu.edu.cn</a
+              >
             </p>
           </div>
         </section>
 
         <!-- 其他人员 -->
         <section class="animate-section border-l-4 border-gray-800 pl-8 py-4">
-          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Other Individuals</h2>
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Other Inquiries</h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">
             <p>
-              If you are interested in the lab, but don't see a relevant position listed here,
-              please feel free to contact Graham (
-              <a href="mailto:gmcvicker@salk.edu" class="text-blue-600 hover:underline"
-                >gmcvicker@salk.edu</a
-              >) with an inquiry.
+              If you are interested in our research direction but do not see a suitable position listed above, you
+              are also welcome to contact us via email to inquire about potential collaborations or visiting
+              opportunities.
             </p>
           </div>
         </section>

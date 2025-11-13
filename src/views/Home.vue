@@ -39,19 +39,19 @@ onMounted(() => {
     <!-- 主要内容 -->
     <div class="max-w-6xl mx-auto px-6 py-12">
       <h1 class="animate-title text-3xl md:text-4xl font-light text-gray-800 mb-6">
-        Welcome to the McVicker Laboratory
+        Welcome to BioKLab!
       </h1>
 
       <p class="animate-text text-gray-700 leading-relaxed mb-4">
-        The McVicker Laboratory studies how human genetic variation affects chromatin state and gene
-        regulation. Our vision is to understand the regulatory function of every non-coding genetic
-        variant in every cell type. This knowledge would reveal biological mechanisms underlying
-        disease and support development of personalized therapies to treat disease.
+        BioKLab focuses on integrating computational approaches with biomedical big data to unravel
+        mechanisms of complex diseases and advance translational medicine. Our vision is to bridge the
+        gap between bench research and clinical practice by decoding molecular regulators of disease
+        progression, enabling precise diagnosis and targeted therapy development.
       </p>
 
       <p class="animate-text text-gray-700 leading-relaxed mb-12">
-        To achieve this vision we use a combination of natural genetic variation, genome
-        perturbations, and computational analysis.
+        To achieve this vision, we leverage a combination of computational algorithms & AI, multi-omics
+        data integration, and translational validation.
       </p>
 
       <!-- 三个研究方向卡片 -->
@@ -78,13 +78,12 @@ onMounted(() => {
           </div>
           <div class="flex-1 text-center md:text-left">
             <h2 class="text-lg md:text-xl font-semibold text-gray-800 mb-2">
-              Natural Genetic Variation.
+              Computational Algorithms & AI.
             </h2>
             <p class="text-gray-700 leading-relaxed text-sm md:text-base">
-              We use germline genetic variation as well as somatic mutations to identify genetic
-              variants associated with changes in chromatin and gene expression. To identify these
-              associations, we map molecular quantitative trait loci (QTLs) and analyze allele
-              specific expression.
+              We develop and apply statistical learning and deep learning
+              techniques to mine biomedical data, with a focus on deep learning interpretability and predictive
+              modeling for disease-related traits.
             </p>
           </div>
         </div>
@@ -111,11 +110,12 @@ onMounted(() => {
           </div>
           <div class="flex-1 text-center md:text-left">
             <h2 class="text-lg md:text-xl font-semibold text-gray-800 mb-2">
-              Genome Perturbations.
+              Multi-Omics Data Integration.
             </h2>
             <p class="text-gray-700 leading-relaxed text-sm md:text-base">
-              We use CRISPR technologies and reporter assays to perturb the genome and determine how
-              sequences affect chromatin and gene expression.
+              We integrate single-cell omics, genomic, and clinical datasets to
+              dissect cell-specific transcriptional regulation and molecular mechanisms underlying cancer
+              metastasis and respiratory diseases.
             </p>
           </div>
         </div>
@@ -142,11 +142,12 @@ onMounted(() => {
           </div>
           <div class="flex-1 text-center md:text-left">
             <h2 class="text-lg md:text-xl font-semibold text-gray-800 mb-2">
-              Computational Analysis.
+              Translational Validation.
             </h2>
             <p class="text-gray-700 leading-relaxed text-sm md:text-base">
-              We use machine learning method and statistical methods analyze genomic datasets and to
-              predict which variants affect chromatin and gene expression.
+              We conduct computational screening of anti-metastatic drugs and
+              validate key findings through functional associations, accelerating the translation of basic
+              research to clinical applications.
             </p>
           </div>
         </div>

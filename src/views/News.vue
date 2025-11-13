@@ -21,100 +21,63 @@ interface TimelineEntry {
 // },
 const timeline: TimelineEntry[] = [
   {
-    date: 'April 2025',
-    items: [{ text: 'Congrats to Dr. Mickey Lorenzini for successfully defending his PhD!' }],
+    date: 'October 2025',
+    items: [{ text: 'Undergraduate students Qichen and Shihang join BioKLab. Welcome!' }],
   },
   {
-    date: 'February 2025',
+    date: 'September 2025',
     items: [
-      {
-        text: 'Our collaboratorative paper Multiomic QTL mapping reveals phenotypic complexity of GWAS loci and prioritizes putative causal variants with the Frazer lab (and others) is now published in Cell Genomics! Jeff was a contributing author.',
-        link: '#',
-      },
+      { text: 'Yueqi and Maowang join BioKLab. Welcome!' },
+      { text: 'Undergraduates Fuhan Lei and Jifeng Yu Admitted to Harbin Institute of Technology and Tsinghua University for Direct Ph.D. Studies! Congratulations to undergraduate student Fuhan Lei for being directly admitted to the Ph.D. program at Harbin Institute of Technology, and Jifeng Yu for direct admission to the Ph.D. program at Tsinghua University. This achievement highlights the laboratory\'s success in cultivating outstanding young talent. We take great pride in their accomplishments.' },
     ],
   },
   {
-    date: 'January 2025',
+    date: 'June 2025',
     items: [
-      {
-        text: 'The lab has moved into our newly-renovated space on the 3rd floor of the Salk Institute South Building!',
-      },
+      { text: 'Master\'s student Jing Li has successfully completed her studies and obtained her Master\'s degree. During her time in the lab, Jing was the leader of the "TNBC_heterogeneity" project, and also actively participated in other\'s research. We wish her continued success in her future career.' },
+      { text: 'Undergraduate student Yinzhi joins BioKLab. Welcome!' },
     ],
   },
   {
-    date: 'October 2024',
+    date: 'September 2024',
     items: [
-      {
-        text: 'Our paper led by Jessica and Karthik Analysis of CRISPR perturbations indicates that enhancers predominantly act multiplicatively is now published in Cell Genomics!',
-        link: '#',
-      },
-      {
-        text: 'Graham gave a featured plenary talk at the American Society for Human Genetics Meeting in Denver on Joint profiling of Cas9 edit sites and transcriptomes in single-cells with Superb-seq',
-      },
+      { text: 'Ziyi and Sirui join BioKLab. Welcome!' },
     ],
   },
   {
-    date: 'August 2024',
-    items: [{ text: 'Congrats to Han for passing his qualifying exam!' }],
-  },
-  {
-    date: 'July 2024',
+    date: 'September 2023',
     items: [
-      { text: 'So long Ariana who is leaving to start her PhD at Scripps Research!' },
-      { text: 'Congrats to Brad for being awarded a Hewitt Foundation Fellowship!' },
+      { text: 'Shumin, Yang, and Xueying join BioKLab. Welcome!' },
     ],
   },
   {
-    date: 'June 2024',
+    date: 'June 2023',
     items: [
-      {
-        text: 'Welcome back Elise, who has completed her undergrad degree and returned the lab as a Research Assistant!',
-      },
+      { text: 'Undergraduate student Fuhan join BioKLab. Welcome!' },
     ],
   },
   {
-    date: 'April 2024',
+    date: 'February 2023',
     items: [
-      {
-        text: 'Congrats to Kiki for being selected into the Yale Ciencia Academy Career Development Program',
-      },
-      {
-        text: 'Congrants to Jeff for being awarded an F31 Ruth L. Kirschstein National Research Service Award from NIH/NHGRI',
-      },
+      { text: 'Collaborative Paper "Histone tyrosine sulfation by SULT1B1 regulates H4R3me2a and gene transcription" was in published in Nature Chemical Biology.' },
     ],
   },
   {
-    date: 'January 2024',
+    date: 'September 2022',
     items: [
-      {
-        text: 'Mickey gave a platform presentation on our Superb-seq technology at the Keystone meeting on Single-Cell Biology: Tissue Genomics, Technologies and Disease meeting in Vancouver, BC',
-      },
+      { text: 'Undergraduate students Jifeng and Weihang join BioKLab. Welcome!' },
     ],
   },
   {
-    date: 'October 2023',
+    date: 'June 2022',
     items: [
-      {
-        text: 'Welcome to Dr. Brad Balderson who joins the lab as a postdoc after completing his PhD at the University of Queensland',
-      },
-      {
-        text: 'So long and congrats to Jessica Zhou who has started a postdoctoral scholar in the Koo Lab at Cold Spring Harbor.',
-        link: '#',
-      },
-      {
-        text: 'Our collaborative paper Single-nucleus genomics in outbred rats with divergent cocaine addiction-like behaviors reveals changes in amygdala GABAergic inhibition is now out in Nature Neuroscience. This paper was lead by Jessica Zhou with contributions from Aaron Ho. It was a close collaboration with the laboratories of Francesca Telese, Abe Palmer and others!',
-        link: '#',
-      },
+      { text: 'Jing, Chunyang, and Xiuyuan join BioKLab. Welcome!' },
     ],
   },
   {
-    date: 'August 2023',
+    date: 'March 2022',
     items: [
-      { text: 'Congrats to Jeff for passing his Senate Exam!' },
-      {
-        text: 'So long and congrats to Arko for starting his own lab as assistant Professor in the Department of Genetics at the University of Alabama at Birmingham!',
-        link: '#',
-      },
+      { text: 'Ke joins the National Institute of Health Data Science at Shandong University and BioKLab opens!' },
     ],
   },
 ]
