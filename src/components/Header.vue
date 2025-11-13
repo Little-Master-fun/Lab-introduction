@@ -161,7 +161,7 @@ const closeMobileMenu = () => {
               >People</RouterLink
             >
           </li>
-          <li>
+          <!-- <li>
             <RouterLink
               to="/photos"
               @click="closeMobileMenu"
@@ -169,7 +169,7 @@ const closeMobileMenu = () => {
               active-class="bg-gray-800 text-white border-l-4 border-white"
               >Photos</RouterLink
             >
-          </li>
+          </li> -->
           <li>
             <RouterLink
               to="/publications"
@@ -179,7 +179,7 @@ const closeMobileMenu = () => {
               >Publications</RouterLink
             >
           </li>
-          <li>
+          <!-- <li>
             <RouterLink
               to="/software"
               @click="closeMobileMenu"
@@ -187,7 +187,7 @@ const closeMobileMenu = () => {
               active-class="bg-gray-800 text-white border-l-4 border-white"
               >Software</RouterLink
             >
-          </li>
+          </li> -->
           <li>
             <RouterLink
               to="/join"
