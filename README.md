@@ -34,8 +34,8 @@ Lab-introduction/
 │   │   ├── Join.vue        # 加入我们页面
 │   │   └── Contact.vue     # 联系方式页面
 │   ├── components/         # 公共组件
-│   │   ├── Header.vue      # 导航栏                （这里要改）
-│   │   ├── Footer.vue      # 页脚                  （这里要改）
+│   │   ├── Header.vue      # 导航栏                
+│   │   ├── Footer.vue      # 页脚                  
 │   │   ├── Carousel.vue    # 轮播图组件
 │   │   ├── PersonCard.vue  # 人物卡片
 │   │   ├── PersonModal.vue # 人物详情弹窗
@@ -365,7 +365,7 @@ A: 在 Vite 项目中有两种图片引入方式：
 
 2. **在组件中导入图片**
     
-    我已经写好了路劲映射 ：
+    我已经写好了路径映射 ：
 
     - `@avatar` → `src/assets/images/avatar`
     - `@carousel` → `src/assets/images/carousel`
